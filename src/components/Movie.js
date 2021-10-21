@@ -1,5 +1,4 @@
 import React, {useContext} from "react";
-import {Link} from 'react-router-dom';
 import PropTypes from 'prop-types';
 import MovieContext from "../context/movie-context";
 
@@ -17,7 +16,6 @@ const Movie = (props) => {
   }
 
   const detailMovie = (movie) => {
-    console.log(movie);
     dispatchData({...data, detailMovie: movie})
   };
 
@@ -33,13 +31,11 @@ const Movie = (props) => {
       <div className={'movie-over'}>
         <div className={'actions-movie'}>
           <h2>Overview</h2>
-          <Link to={'/details'}>
-            <button onClick={() => {
-              detailMovie(movie)
-            }}>
-              <i className={'fas fa-info icon'}/>
-            </button>
-          </Link>
+          <button onClick={() => {
+            detailMovie(movie)
+          }}>
+            <i className={'fas fa-info icon'}/>
+          </button>
         </div>
         <p>{movie.overview}</p>
       </div>
