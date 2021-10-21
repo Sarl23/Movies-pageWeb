@@ -2,6 +2,10 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+Development of a react js project, where information about movies will be listed.
+
+The movie information is inside a json file in src.
+
 ## Available Scripts
 
 In the project directory, you can run:
